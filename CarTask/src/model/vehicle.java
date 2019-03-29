@@ -3,7 +3,7 @@ package model;
 import javafx.scene.paint.Color;
 import javafx.scene.Group;
 
-public class Vehicle /* STORT FUCKING V*/extends Group implements Movable {
+public class Vehicle extends Group implements Movable {
 	
 	public static double trimFactor;      //JOEL SUGER
 	public boolean turboOn;
@@ -14,6 +14,7 @@ public class Vehicle /* STORT FUCKING V*/extends Group implements Movable {
 	public String modelName; // The car model name
 	private int gasOrNot;// Decides if the car will accelerate
 	private int brakeOrNot;// Decides if the car will brake
+	private int amount;
 
 	private double getEnginePower() {	//hämtar herspers från de specifika bilarna
 		return enginePower;
