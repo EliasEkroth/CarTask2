@@ -3,7 +3,7 @@ package model;
 import javafx.scene.paint.Color;
 import javafx.scene.Group;
 
-public class Ferry extends Vehicle {
+public class Ferry extends vehicle {
 	
 	CarLoader loader;
 	

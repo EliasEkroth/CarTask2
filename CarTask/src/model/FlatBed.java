@@ -1,4 +1,4 @@
-package src.model;
+package model;
 import javafx.scene.paint.Color;
 
 public class FlatBed {
