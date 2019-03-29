@@ -14,6 +14,7 @@ public class vehicle extends Group implements Movable {
 	public String modelName; // The car model name
 	private int gasOrNot;// Decides if the car will accelerate
 	private int brakeOrNot;// Decides if the car will brake
+	private int amount;
 
 	private double getEnginePower() {	//hämtar herspers från de specifika bilarna
 		return enginePower;

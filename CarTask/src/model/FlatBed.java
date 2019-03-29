@@ -26,7 +26,7 @@ public class FlatBed {
 	}
 
 	private void lowerBed() {
-		carbed--;
+		carBed--;
 		if(carBed < 0) {
 			carBed = 0;
 		}
