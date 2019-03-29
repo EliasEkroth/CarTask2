@@ -3,17 +3,17 @@ import java.util.ArrayList;
 
 import javafx.scene.paint.Color;
 
-public class CarLoader extends car{
+public class carloader extends car{
 	
 	int capacity = cap;
 	ArrayList<car> cars = new ArrayList<car>();
 	private boolean isOpen;
 	
-	public CarLoader(int cap) {
+	public carloader(int cap) {
 		new cap = this.capacity;
 	}
 
-	public void updateAllPositions(Vehicle v) {
+	public void updateAllPositions(vehicle v) {
 		for (car car : cars) {
 			car.setXPos(v.getXPos());
 			car.setYPos(v.getYPos());
