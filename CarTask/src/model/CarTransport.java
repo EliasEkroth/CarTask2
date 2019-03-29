@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
 public class CarTransport extends car {
 	
 	FlatBed FlatBed;
-	carloader loader;
+	CarLoader loader;
 	ArrayList<car> cars = new ArrayList<car>();
 	int capacity = 5;
 	
@@ -36,7 +36,7 @@ public class CarTransport extends car {
 	
 	public void move() {
 		super.move();
-		carloader.updateAllPositions();
+		CarLoader.updateAllPositions();
 	}
 	
 }

@@ -3,9 +3,9 @@ package model;
 import javafx.scene.paint.Color;
 import javafx.scene.Group;
 
-public class Ferry extends vehicle {
+public class Ferry extends Vehicle {
 	
-	carloader loader;
+	CarLoader loader;
 	
 	public void loadCar(car c) {
 		if(FlatBed.isOpen()) {

@@ -1,13 +1,13 @@
 package model;
 import javafx.scene.paint.Color;
 
-public class koenigseggOne1 extends car{
+public class KoenigseggOne1 extends car{
 
 
-	private koenigseggOne1() {		//sätter den specifika datan för ferrari
+	private KoenigseggOne1() {		//sätter den specifika datan för ferrari
 		color = Color.RED;
 		enginePower = 1340 /*bulkade hästar*/;
-		modelName = "koenigseggOne:1";
+		modelName = "KoenigseggOne:1";
 	}
 
 }
