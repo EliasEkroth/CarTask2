@@ -9,12 +9,12 @@ public class Scania extends car{
 		modelName = "Scania R 730";
 	}
 
-	private getBedAngle() {
+	private int getBedAngle() {
 		return FlatBed.carBed;
 	}
 	
-	public void gas(double amount) {
-		if(FlatBed.getBedAngle == 0) {
+	public void gas(int amount) {
+		if(FlatBed.carBed == 0) {
 		super.gas(amount);
 		}
 	}

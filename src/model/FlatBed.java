@@ -3,8 +3,8 @@ import javafx.scene.paint.Color;
 
 public class FlatBed {
 	
-	private int carBed = 0;
-	private boolean isOpen;
+	public static int carBed = 0;
+	private static boolean isOpen;
 	
 	public void open() {
 		isOpen = true;
@@ -14,7 +14,21 @@ public class FlatBed {
 		isOpen = false;
 	}
 	
-	public boolean isOpen() {
+	/*public int getBedAngle() {
+		return carBed;
+	}*/
+	
+	public int setBedAngle(int amount) {
+		if(amount <= 70) {
+			carBed = amount;
+		}else if(amount < 0){
+			carBed = 0;
+		}
+			return carBed;
+		}
+		
+	
+	public static boolean isOpen() {
 		return isOpen;
 	}
 	

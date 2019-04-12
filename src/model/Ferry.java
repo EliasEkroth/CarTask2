@@ -6,16 +6,18 @@ import javafx.scene.Group;
 public class Ferry extends Vehicle {
 	
 	CarLoader loader;
+	CarTransport transport;
+	FlatBed flatbed;
 	
 	public void loadCar(car c) {
 		if(FlatBed.isOpen()) {
-			cars.add(c);
+			CarLoader.cars.add(c);
 		}
 	}
 	
 	public void unloadCar(car c) {
-		if(FlatBed.isOpen() != this) {
-			cars.remove(cars.size()-1);
+		if(FlatBed.isOpen()) {
+			CarLoader.cars.remove(CarLoader.cars.size()-1);
 		}
 	}
 	

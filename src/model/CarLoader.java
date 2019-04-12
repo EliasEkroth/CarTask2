@@ -5,8 +5,8 @@ import javafx.scene.paint.Color;
 
 public class CarLoader extends car{
 	
-	int capacity = 5;
-	ArrayList<car> cars = new ArrayList<car>();
+	int capacity;
+	static ArrayList<car> cars = new ArrayList<car>();
 	private boolean isOpen;
 	
 	public CarLoader(int capacity) {
@@ -27,14 +27,14 @@ public class CarLoader extends car{
 	}
 	
 	public void unloadLastCar(car c) {
-		if(FlatBed.isOpen() && cars.size()>0 && capacity != this) {
+		if(FlatBed.isOpen() && cars.size()>0 /*&& capacity != this*/) {
 			cars.remove(cars.size()-1);
 		}
 	}
 	
 	public void unloadFirstCar(car c) {
-		if(FlatBed.isOpen() && cars.size()>0 && capacity != this) {
-			cars.remove(cars.size(0));
+		if(FlatBed.isOpen() && cars.size()>0 /*&& capacity != this*/) {
+			cars.remove(cars.size[0]);
 		}
 	}
 	

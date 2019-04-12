@@ -7,18 +7,18 @@ public class CarTransport extends car {
 	
 	FlatBed FlatBed;
 	CarLoader loader;
-	ArrayList<car> cars = new ArrayList<car>();
+	//ArrayList<car> cars = new ArrayList<car>();
 	int capacity = 5;
 	
 	public void loadCar(car c) {
-		if(FlatBed.isOpen() && cars.size()<5) {
-			cars.add(c);
+		if(FlatBed.isOpen() && CarLoader.cars.size()<5) {
+			CarLoader.cars.add(c);
 		}
 	}
 	
 	public void unloadCar(car c) {
-		if(FlatBed.isOpen() && cars.size()>0/* && capacity != this*/) {
-			cars.remove(cars.size()-1);
+		if(FlatBed.isOpen() && CarLoader.cars.size()>0/* && capacity != this*/) {
+			CarLoader.cars.remove(CarLoader.cars.size()-1);
 		}
 	}
 	
