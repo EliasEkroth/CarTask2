@@ -1,7 +1,7 @@
 package model;
 import javafx.scene.paint.Color;
 
-public class Ferrari458 extends car{
+public class Ferrari458 extends vehicle {
 
 
 	private Ferrari458() {		//sätter den specifika datan för ferrari

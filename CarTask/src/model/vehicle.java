@@ -3,7 +3,7 @@ package model;
 import javafx.scene.paint.Color;
 import javafx.scene.Group;
 
-public class Vehicle extends Group implements Movable {
+public class vehicle extends Group implements Movable {
 	
 	public static double trimFactor;      //JOEL SUGER
 	public boolean turboOn;
