@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 public class FlatBed {
 	
 	private int carBed = 0;
-	private boolean isOpen;
+	private static boolean isOpen;
 	
 	public void open() {
 		isOpen = true;
@@ -14,7 +14,7 @@ public class FlatBed {
 		isOpen = false;
 	}
 	
-	public boolean isOpen() {
+	public static boolean isOpen() {
 		return isOpen;
 	}
 	

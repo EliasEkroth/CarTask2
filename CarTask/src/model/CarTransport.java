@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 import javafx.scene.paint.Color;
 
-public class CarTransport extends car {
+public class CarTransport extends Vehicle {
 	
 	FlatBed FlatBed;
 	CarLoader loader;
@@ -33,7 +33,7 @@ public class CarTransport extends car {
 		super.gas(amount);
 		}
 	}
-	
+
 	public void move() {
 		super.move();
 		CarLoader.updateAllPositions();
