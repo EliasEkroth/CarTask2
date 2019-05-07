@@ -15,6 +15,8 @@ public class Vehicle extends Group implements Movable {
 	private int gasOrNot;// Decides if the car will accelerate
 	private int brakeOrNot;// Decides if the car will brake
 	private int amount;
+	public double xpos;
+	public double ypos;
 
 	private double getEnginePower() {	//hämtar herspers från de specifika bilarna
 		return enginePower;
@@ -62,14 +64,14 @@ public class Vehicle extends Group implements Movable {
 		}
 	}
 
-	public void gas(int gasOrNot) { 	//säger att du skall accelerera	
+	public void gas(double amount2) { 	//säger att du skall accelerera	
 		if(brakeOrNot == 1) {
 			brakeOrNot = 0;
 		}
-		if(gasOrNot == 1) {
+		if(amount2 == 1) {
 			incrementSpeed(amount);	//hämtar accelerade farten
 		}
-		else if (gasOrNot == 0) {
+		else if (amount2 == 0) {
 			return;
 		}
 	}
@@ -102,6 +104,22 @@ public class Vehicle extends Group implements Movable {
         			
 	}
 
+	public double getX() {
+		return xpos;
+	}
+	
+	public double getY() {
+		return ypos;
+	}
+	
+	public void setX(double x) {
+		xpos = x;
+	}
+	
+	public void setY(double y) {
+		xpos = y;
+	}
+	
 	@Override
 	public void turnLeft() {						//roterar bilen uppot.
 		this.setRotate(this.getRotate() - 90);

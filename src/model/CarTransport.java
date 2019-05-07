@@ -36,7 +36,7 @@ public class CarTransport extends car {
 	
 	public void move() {
 		super.move();
-		CarLoader.updateAllPositions();
+		CarLoader.updateAllPositions(loader);
 	}
 	
 }
