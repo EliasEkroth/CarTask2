@@ -15,9 +15,13 @@ public class Vehicle extends Group implements Movable {
 	private int gasOrNot;// Decides if the car will accelerate
 	private int brakeOrNot;// Decides if the car will brake
 	private int amount;
-	public double xpos;
-	public double ypos;
+	public static double xpos;
+	public static double ypos;
 
+	public static String getModelName() {
+		return modelName;
+	}
+	
 	private double getEnginePower() {	//hämtar herspers från de specifika bilarna
 		return enginePower;
 	}
@@ -104,11 +108,11 @@ public class Vehicle extends Group implements Movable {
         			
 	}
 
-	public double getX() {
+	public static double getX() {
 		return xpos;
 	}
 	
-	public double getY() {
+	public static double getY() {
 		return ypos;
 	}
 	

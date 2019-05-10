@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import model.Saab95;
 import model.Vehicle;
 import model.Volvo740;
 import view.ButtonBox;
@@ -13,8 +14,8 @@ import view.CarPane;
 
 public class App extends Application {
 
-	private final static double WIDTH = 1200;
-	private final static double HEIGHT = 700;
+	public final static double WIDTH = 1200;
+	public final static double HEIGHT = 700;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -23,8 +24,12 @@ public class App extends Application {
 
 		CarController cc = new CarController(cp);
 
-		Vehicle model = new Volvo740();
-		cc.setModel(model);
+		Vehicle modelVolvo = new Volvo740();
+		cc.addVehicle(modelVolvo);
+		
+		Vehicle modelSaab = new Saab95();
+		modelSaab.setY(60);
+		cc.addVehicle(modelSaab);
 
 		ButtonBox cbp = new ButtonBox(cc);
 
