@@ -18,7 +18,7 @@ public class Vehicle extends Group implements Movable {
 	public static double xpos;
 	public static double ypos;
 
-	public static String getModelName() {
+	public String getModelName() {
 		return modelName;
 	}
 	

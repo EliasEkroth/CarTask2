@@ -3,9 +3,13 @@ package view;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import model.Vehicle;
 
 public class CarPane extends Pane {
 
+	private Vehicle volvo740;
+	private Vehicle saab95;
+	
 	private ImageView volvoImage;
 	private ImageView saabImage;
 	private double volvoXPos, saabXPos;
@@ -19,10 +23,10 @@ public class CarPane extends Pane {
 	}
 
 	public void move(double x, double y) {
-		if (model == "Volvo740") {
+		if (volvo740.getModelName() == "Volvo740") {
 			volvoXPos = x;
 			volvoYPos = y;
-		}else if(model == "Saab95") {
+		}else if(saab95.getModelName() == "Saab95") {
 			saabXPos = x;
 			saabYPos = y;
 		}
